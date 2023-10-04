@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#navigation-buttons button {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+/* #region GENERAL WEBSITE STYLING */
+
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* color: white; */
+}
+
+
+body {
+    background-attachment: local;
+    background-color:#ff9999;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(30, 41, 59,0) 0%,
+        rgba(30, 41, 59,0) 10%,
+        rgba(30, 41, 59,1) 40%), url(/resources/assets/images/site/background.jpg);
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+@media (max-width: 1000px) {
+
+    body {
+        background-size: 1000px 600px; /* Force the image to its minimum width */
+    }
+
+}
+
+#website-logo {
+    background-image: url("/resources/assets/images/site/logo.png");
+    /* border: 0px; */
+    width: 90px;
+    height: 44px;
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+img {
+    border: 0px;
+}
+
+.download-icon {
+    background-image: url("/resources/assets/images/site/download.jpg");
+    height: 40px;
+    width: 60px;
+    background-size:contain;
+    background-position: center;
+}
+
+/* #endregion */
+
+/* #region NAVIGATION STYLING */
+
+/* #endregion */
+
+/* #region NEWS STYLING */
+
+.small-news-image,
+#latest-news-image {
+    background-image: url("/resources/assets/images/news/news.jpg");
+}
+
+#latest-news-image {
+    height: 180px;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.small-news-image {
+    height: 32px;
+    background-position: 190 -30;
+}
+
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 50px;
+}
+
+.news-body {
+    display: -webkit-box;
+    max-height: 100px;
+    word-wrap: break-word;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* #endregion */
