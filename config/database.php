@@ -63,6 +63,26 @@ return [
             ]) : [],
         ],
 
+        'wow' => [
+            'driver' => 'mysql',
+            'url' => env('DATABASE_URL'),
+            'host' => env('WOW_HOST', '127.0.0.1'),
+            'port' => env('WOW_PORT', '3306'),
+            'database' => env('WOW_DATABASE', 'forge'),
+            'username' => env('WOW_USERNAME', 'forge'),
+            'password' => env('WOW_PASSWORD', ''),
+            'unix_socket' => env('WOW_SOCKET', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'strict' => true,
+            'engine' => null,
+            'options' => extension_loaded('pdo_mysql') ? array_filter([
+                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+            ]) : [],
+        ],
+
         'pgsql' => [
             'driver' => 'pgsql',
             'url' => env('DATABASE_URL'),

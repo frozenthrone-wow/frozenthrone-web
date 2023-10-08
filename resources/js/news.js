@@ -1,7 +1,7 @@
 export { getNews }
 
 let newsObjectTemplate =
-    '<li class="pb-3 pt-3 sm:pb-4 hover:bg-slate-600 px-2 hover:bg-opacity-30 hover:border-r-2 border-purple-500 rounded cursor-pointer" onClick = "toggleNewsView($POSTID$)"> \
+    '<li class="pb-3 pt-3 sm:pb-4 hover:bg-slate-600 px-2 hover:bg-opacity-30 hover:border-r-2 border-green-500 rounded cursor-pointer" onClick = "toggleNewsView($POSTID$)"> \
         <div class="flex items-center space-x-6"> \
             <div class="flex-shrink-0">\
                 <div class="w-8 h-8 small-news-image rounded"></div>\
@@ -11,7 +11,7 @@ let newsObjectTemplate =
                     $POSTTITLE$ \
                 </p> \
             </div> \
-            <div class="text-purple-400 font-medium mb-2">\
+            <div class="text-green-400 font-medium mb-2">\
             <small>$POSTEDBY$, $POSTEDDATE$</small>\
             </div> \
         </div> \

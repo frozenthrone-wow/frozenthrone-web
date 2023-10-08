@@ -38,11 +38,8 @@ class NewsGet {
         'SELECT n.id as "PostID",
             n.title AS "PostTitle",
             n.body AS "PostBody",
-            n.post_date AS "PostDate",
-            COALESCE(a.nickname, \'Team\') AS "PostedBy"
-        FROM website."news" n
-        JOIN website."access" a
-            ON a.id = n.posted_by
+            n.post_date AS "PostDate"
+        FROM legion_website.news n
         '.($newsId ? 'WHERE n.id = :newsId AND n.active = true' : 'WHERE n.active = true').'
         ORDER BY n.post_date DESC
         '.( $latest ? 'LIMIT 1' : '');
@@ -64,7 +61,7 @@ class NewsGet {
                 $news['PostBody'],
                 date('Y-m-d H:i',
                     strtotime($news['PostDate'])),
-                $news['PostedBy'],
+                'Burning Legion Team',
             );
 
             $newsArray[] = $newsObject->toArray();

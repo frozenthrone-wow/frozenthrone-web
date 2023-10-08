@@ -4,12 +4,12 @@
 
         <a href="#" class="flex items-center pt-1 md:pt-0">
             <span class="h-6 mr-3 sm:h-9 bg-transparent" id = "website-logo"></span>
-            <span class="self-center text-xl font-semibold whitespace-nowrap text-purple-300">{{ config('legionweb.server.name') }}</span>
+            <span class="self-center text-xl font-semibold whitespace-nowrap text-green-300">{{ config('legionweb.server.name') }}</span>
         </a>
 
         <button id = "navbar-menu-collapse" type="button"
         class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg
-        md:hidden hover:bg-purple-100 focus:outline-none focus:ring-2 focus:ring-purple-200 dark:text-purple-400 dark:hover:bg-gray-800 dark:focus:ring-purple-600">
+        md:hidden hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-200 dark:text-green-400 dark:hover:bg-gray-800 dark:focus:ring-green-600">
             <span class="sr-only">Open main menu</span>
             <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
         </button>
@@ -18,9 +18,9 @@
             <ul class="flex flex-col px-2 rounded-lg md:flex-row md:space-x-0 md:mt-0 md:text-sm md:font-medium p-10 md:p-0" id = "navigation-buttons">
                 <li>
                     <button id="sidebar-interact" data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button"
-                            class="flex-auto text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br
-                                focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg
-                                shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium text-sm
+                            class="flex-auto text-white bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:bg-gradient-to-br
+                                focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg
+                                shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium text-sm
                                 text-center md:w-32 h-14 px-5 py-2.5 w-full">
                         <span class="sr-only">REGISTER</span>
                         REGISTER
@@ -28,19 +28,29 @@
                 </li>
                 <li>
                     <button id="download-interact" type="button"
-                                class="flex-auto text-white bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 hover:bg-gradient-to-br
-                                focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg
-                                shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium text-sm
+                                class="flex-auto text-white bg-gradient-to-r from-green-700 via-green-600 to-green-500 hover:bg-gradient-to-br
+                                focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg
+                                shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium text-sm
                                 text-center md:w-32 h-14 px-5 py-2.5 w-full">
                         <span class="sr-only">DOWNLOAD</span>
                         DOWNLOAD
                     </button>
                 </li>
                 <li>
+                    <button id="connect-interact" type="button"
+                                class="flex-auto text-white bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:bg-gradient-to-br
+                                focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg
+                                shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium text-sm
+                                text-center md:w-32 h-14 px-5 py-2.5 w-full">
+                        <span class="sr-only">CONNECT</span>
+                        CONNECT
+                    </button>
+                </li>
+                <li>
                     <button id="community-interact-forum" type="button"
-                                class="flex-auto text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br
-                                focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg
-                                shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium text-sm
+                                class="flex-auto text-white bg-gradient-to-r from-green-700 via-green-600 to-green-500 hover:bg-gradient-to-br
+                                focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg
+                                shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium text-sm
                                 text-center md:w-32 h-14 px-5 py-2.5 w-full">
                         <span class="sr-only">FORUM</span>
                         FORUM
@@ -48,9 +58,9 @@
                 </li>
                 <li>
                     <button id="community-interact-discord" type="button"
-                                class="flex-auto text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br
-                                focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg
-                                shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium text-sm
+                                class="flex-auto text-white bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:bg-gradient-to-br
+                                focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg
+                                shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium text-sm
                                 text-center md:w-32 h-14 px-5 py-2.5 w-full">
                         <span class="sr-only">DISCORD</span>
                         DISCORD
@@ -65,6 +75,10 @@
 
     $("#download-interact").on("click", () => {
         toggleDownloadsModal();
+    })
+
+    $("#connect-interact").on("click", () => {
+        toggleHowToConnectModal();
     })
 
     let navbarCollapsed = true;

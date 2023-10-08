@@ -37,11 +37,11 @@ class DownloadsGet {
         $query =
         'SELECT d.id as "DownloadID",
             d.link as "DownloadLink",
-            d."date" as "DownloadDate",
-            d.provider as "DownloadProvider"
-        FROM website.downloads d
+            d.date as "DownloadDate",
+            d.host as "DownloadProvider"
+        FROM downloads d
         '.($id ? ' WHERE d.id = :newsId AND d.active = true ' : ' WHERE d.active = true ' ).'
-        ORDER BY d."date" DESC;';
+        ORDER BY d.date DESC;';
 
         $parameters = [];
         if($id) {

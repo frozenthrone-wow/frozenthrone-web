@@ -34,27 +34,27 @@ class StatsServerStatistics {
 
         $ServerStatsArray = [];
 
-        $query =
-        'SELECT count(a) COUNT FROM data."Account" a
-        UNION ALL
-        SELECT count(c) COUNT FROM data."Character" c
-        UNION ALL
-        SELECT count(g) COUNT FROM guild."Guild" g';
+        // $query =
+        // 'SELECT count(a) COUNT FROM data."Account" a
+        // UNION ALL
+        // SELECT count(c) COUNT FROM data."Character" c
+        // UNION ALL
+        // SELECT count(g) COUNT FROM guild."Guild" g';
 
-        $parameters = [];
+        // $parameters = [];
 
-        $ServerStatisticsObject = DB::select($query, $parameters);
-        $ServerStatistics = [];
-        foreach($ServerStatisticsObject as $StatisticsObject)
-        {
-            $ServerStatistics[] = ((array) $StatisticsObject)['count'];
-        }
+        // $ServerStatisticsObject = DB::select($query, $parameters);
+        // $ServerStatistics = [];
+        // foreach($ServerStatisticsObject as $StatisticsObject)
+        // {
+        //     $ServerStatistics[] = ((array) $StatisticsObject)['count'];
+        // }
 
-        $ServerStatsArray = new ServerStatsDTO(
-            $ServerStatistics[0],
-            $ServerStatistics[1],
-            $ServerStatistics[2],
-        );
+        // $ServerStatsArray = new ServerStatsDTO(
+        //     $ServerStatistics[0],
+        //     $ServerStatistics[1],
+        //     $ServerStatistics[2],
+        // );
 
         return $ServerStatsArray->toArray();
 

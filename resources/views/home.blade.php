@@ -9,7 +9,7 @@
 @stop
 
 @section('content')
-    <h1 class="">Older News</h1>
+    <h1 class="mt-5">OLDER NEWS</h1>
 
     <ul id="older-news">
     </ul>

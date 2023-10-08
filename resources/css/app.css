@@ -16,17 +16,7 @@
 
 
 body {
-    background-attachment: local;
-    background-color:#ff9999;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(30, 41, 59,0) 0%,
-        rgba(30, 41, 59,0) 10%,
-        rgba(30, 41, 59,1) 40%), url(/resources/assets/images/site/background.jpg);
-    background-position:top;
-    background-repeat: no-repeat;
-    background-size: contain;
-
+    /* background-image: linear-gradient(to bottom, #004d7a, #008793, #00bf72, #a8eb12); */
 }
 
 @media (max-width: 1000px) {
@@ -36,6 +26,38 @@ body {
     }
 
 }
+
+#website-background {
+    background-image:
+    linear-gradient(to bottom,
+     #004d7a 10%,
+     #008793 30%,
+     #00bf72 60%,
+     #a8eb12 90%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+#website-background::after {
+    /* The answer */
+    -webkit-mask-image: linear-gradient(to bottom, black 10%, transparent 80%);
+
+    /* Extra CSS */
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("/resources/assets/images/site/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
 
 #website-logo {
     background-image: url("/resources/assets/images/site/logo.png");
@@ -80,15 +102,16 @@ img {
 }
 
 .small-news-image {
-    height: 32px;
-    background-position: 190 -30;
+    height: 64px;
+    background-position: 122px;
+    width: 64px;
 }
 
 .truncate {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    height: 50px;
+    height: 20px;
 }
 
 .news-body {

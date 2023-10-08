@@ -21,7 +21,7 @@
             $POSTTITLE$
         </h2>
 
-        <p class="mt-5 text-purple-400">
+        <p class="mt-5 text-green-400">
             <span id = "post-by"> $POSTEDBY$ </span>,
             <small id ="post-date"> $POSTDATE$ </small>
         </p>

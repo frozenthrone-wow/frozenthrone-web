@@ -2,8 +2,8 @@
 
 return [
     'server' => [
-        'name' => 'Classic MU',
-        'version' => 'v5.1',
+        'name' => 'Burning Legion',
+        'version' => 'v7.3.5',
         'about' => [
             'expRate' => 1,
             'dropRate' => 1,
@@ -29,6 +29,6 @@ return [
 
     'core' => [
         'name' => "legionweb",
-        'version' => '1.0.3'
+        'version' => '1.0.0'
     ]
 ];

@@ -1,7 +1,7 @@
 export { getDownloads }
 
 let downloadsObjectTemplate =
-    '<li class="pb-3 pt-3 sm:pb-4 hover:bg-slate-600 px-2 hover:bg-opacity-30 hover:border-r-2 border-purple-500 rounded cursor-pointer" \
+    '<li class="pb-3 pt-3 sm:pb-4 hover:bg-slate-600 px-2 hover:bg-opacity-30 hover:border-r-2 border-green-500 rounded cursor-pointer" \
     onClick = "redirectDownload(\'$LINK$\')"> \
         <div class="flex items-center space-x-6"> \
             <div class="flex-shrink-0"> \
@@ -15,7 +15,7 @@ let downloadsObjectTemplate =
                 $LINK$ \
                 </p> \
             </div> \
-            <div class="text-purple-400 font-medium mb-2"> \
+            <div class="text-green-400 font-medium mb-2"> \
                 $DATE$ \
             </div> \
         </div> \

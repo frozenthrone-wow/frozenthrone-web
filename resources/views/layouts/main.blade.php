@@ -13,7 +13,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </head>
 
-    <body class="bg-slate-800">
+    <body class="">
+        <div class = "" id = "website-background"></div
+        </div>
         {{-- SIDEBAR --}}
         {{--
             @section('sidebar') GOES HERE
@@ -39,6 +41,7 @@
                 {{-- NAV BUTTONS --}}
                 @include('layouts.navigation')
                 @include('modals.downloads')
+                @include('modals.howto')
                 @include('modals.news_view')
 
                 {{-- TOP PAGE GADGETS --}}
@@ -46,7 +49,7 @@
                     @include('layouts.gadgets.statsGadget')
                 @endif
 
-                <div class="bg-slate-800">
+                <div class="bg-slate-800 mt-10">
                     @if(isset($LatestNews) && $LatestNews)
                         <div id = "latest-news" class="px-10">
                             @include('layouts.news', ['news' => $LatestNews])
@@ -54,7 +57,7 @@
                     @endif
                 </div>
                 <div class="w-full flex-row space-x-5 md:flex pt-5 text-white mb-32">
-                    <div class="basis-8/12 px-10 md:px-0 md:pl-10">
+                    <div class="basis-8/12 md:px-10 bg-slate-800 rounded-none md:rounded-r-lg">
                         @section('content')
 
                         @show
@@ -64,7 +67,7 @@
                     <div class="basis-4/12 pr-5 md:pr-0 mt-5 md:mt-0">
                         @include("layouts.sidecards")
 
-                        <p class="text-sm text-purple-400 text-right mr-2">
+                        <p class="text-sm text-slate-900 text-right mr-2">
                             &copy; {{ config('legionweb.server.name') }}
                             | Powered by {{ config('legionweb.core.name') }} v{{ config('legionweb.core.version') }}
                         </p>
