@@ -4,9 +4,13 @@ namespace App\Classes\Stats;
 use App\DTO\ServerStatsDTO;
 use Illuminate\Support\Facades\DB;
 
-class StatsServerStatistics {
+class StatsOnlinePlayerCount {
 
-    function __construct(){}
+    private array $Realms;
+
+    function __construct(){
+
+    }
 
     public function get(): array
     {
@@ -16,33 +20,26 @@ class StatsServerStatistics {
             'payload' => []
         ];
 
-        $GetServerStats = $this->getGetServerStatsFromDatabase();
+        $GetOnlinePlayerCount = $this->getGetOnlinePlayerCountFromDatabase();
 
-        if(count($GetServerStats)) {
+        if(count($GetOnlinePlayerCount)) {
             $result = [
                 'message' => '',
                 'status' => 200,
-                'payload' => $GetServerStats,
+                'payload' => $GetOnlinePlayerCount,
             ];
         }
 
         return $result;
     }
 
-    private function getGetServerStatsFromDatabase(): array
+    private function getGetOnlinePlayerCountFromDatabase(): array
     {
 
         $ServerStatsArray = [];
 
         $query =
-        'SELECT count(*) as `count`
-        FROM legion_auth.account a
-        UNION ALL
-        SELECT count(*) as `count`
-        FROM legion_characters.`characters` c
-        UNION ALL
-        SELECT count(*) as `count`
-        FROM legion_characters.guild g ';
+        '';
 
         $parameters = [];
 

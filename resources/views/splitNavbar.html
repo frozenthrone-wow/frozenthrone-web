@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Navbar</title>
+    <link href="/static_files/css/tailwind-output.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="container p-3 mx-auto md:p-0">
+        <div class="flex items-center justify-between">
+            <img class="md:mx-auto w-28" src="/static_files/images/logos/logo_4.png" alt="logo_4">
+            <img id="menu-button" class="w-7 h-7 md:hidden" src="/static_files/svgs/bars-black.svg" alt="menu icon">
+        </div>
+        <div class="hidden md:block" id="menu">
+            <div class="grid grid-cols-1 md:grid-cols-9">
+                <div class="col-span-4 text-lg md:border-y border-y-black">
+                    <ul class="justify-between md:p-4 md:flex">
+                        <li class="p-2 py-4 border-b md:py-0 md:border-0"><a href="#">Home</a></li>
+                        <li class="p-2 py-4 border-b md:py-0 md:border-0"><a href="#">Products</a></li>
+                        <li class="p-2 py-4 border-b md:py-0 md:border-0"><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="hidden md:block">
+                    <div class="flex items-center justify-center ">
+                        <div class="p-3 border-2 border-black border-dotted rounded-full">
+                            <img class="mx-auto w-9 h-9" src="/static_files/svgs/cart-red.svg" alt="cart">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-4 md:border-y border-y-black">
+                    <ul class="justify-around text-lg md:p-4 md:flex">
+                        <li class="p-2 py-4 border-b md:py-0 md:border-0"><a href="#">Company</a></li>
+                        <li class="p-2 py-4 border-b md:py-0 md:border-0"><a href="#">Services</a></li>
+                        <li class="p-2 py-4 border-b md:py-0 md:border-0"><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script>
+        const menubtn = document.getElementById('menu-button');
+        const menu = document.getElementById('menu');
+        menubtn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        })
+    </script>
+</body>
+
+</html>

@@ -11,13 +11,6 @@ interface StatsInterface {
     public function getOnlinePlayerCount(): array;
 
     /**
-     * Get the TOP X player ranking
-     *
-     * @return array
-     */
-    public function getTopPlayerRanking(): array;
-
-    /**
      * Get the number of accounts, characters and guilds
      *
      * @return array

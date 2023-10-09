@@ -4,15 +4,16 @@ namespace App\Classes\Stats;
 
 use App\Classes\Stats\StatsInterface;
 
+
 class Stats implements StatsInterface
 {
 
-    private StatsPlayerRanking $StatsPlayerRanking;
+    private StatsOnlinePlayerCount $StatsOnlinePlayerCount;
     private StatsServerStatistics $StatsServerStatistics;
 
     function __construct()
     {
-        $this->StatsPlayerRanking = new StatsPlayerRanking();
+        $this->StatsOnlinePlayerCount = new StatsOnlinePlayerCount();
         $this->StatsServerStatistics = new StatsServerStatistics();
     }
 
@@ -28,16 +29,6 @@ class Stats implements StatsInterface
             'status' => 200,
             'payload' => ['players' => 0],
         ];
-    }
-
-    /**
-     * Get the TOP X player ranking
-     *
-     * @return array
-     */
-    public function getTopPlayerRanking(): array
-    {
-        return $this->StatsPlayerRanking->get();
     }
 
     /**

@@ -62,8 +62,8 @@ body {
 #website-logo {
     background-image: url("/resources/assets/images/site/logo.png");
     /* border: 0px; */
-    width: 90px;
-    height: 44px;
+    width: 70px;
+    height: 70px;
     background-size:contain;
     background-position: center;
     background-repeat: no-repeat;

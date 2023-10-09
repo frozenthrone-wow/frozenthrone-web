@@ -8,11 +8,22 @@ return [
             'expRate' => 1,
             'dropRate' => 1,
 
-            'enableOnlineGadget' => false,
-            'enableRankingGadget' => true,
             'enableStatsGadget' => true,
+        ],
+    ],
 
-            'topRankingNumber' => 5,
+    'realms' => [
+        [
+            'id' => 1,
+            'name' => 'Ithilla',
+            'build' => '26365',
+            'address' => 'burninglegion.wow'
+        ],
+        [
+            'id' => 2,
+            'name' => 'IthillaTest',
+            'build' => '26365',
+            'address' => 'burninglegion.wow:3420'
         ],
     ],
 
