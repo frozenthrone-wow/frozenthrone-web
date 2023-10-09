@@ -13,7 +13,6 @@ class Registration implements RegistrationInterface {
 
     use AuthCommon;
 
-
     function __construct()
     {
 
@@ -36,7 +35,6 @@ class Registration implements RegistrationInterface {
         $password = $registerObject->getPassword();
         $passwordRepeat = $registerObject->getPasswordRepeat();
         $email = $registerObject->getEmail();
-        $securityCode = $registerObject->getSecurityCode();
 
         #region Username Validation
         if(strlen($username) < $this->limits()['minCharLimit']['username'])
@@ -88,7 +86,7 @@ class Registration implements RegistrationInterface {
 	 * @param RegisterDTO $registerObject
 	 * @return array
 	 */
-	public function registerUser(RegisterDTO $registerObject): array
+	public function registerUserBnet(RegisterDTO $registerObject): array
     {
 
         $response = [
@@ -103,7 +101,6 @@ class Registration implements RegistrationInterface {
         // Default hash is bcrypt (config\hashing.php)
         $password = Hash::make($registerObject->getPassword());
         $email = $registerObject->getEmail();
-        $securityCode = $registerObject->getSecurityCode();
 
         $query =
         'INSERT INTO "data"."Account"
@@ -116,7 +113,6 @@ class Registration implements RegistrationInterface {
                 ":uuid" => $uuid,
                 ":login" => $username,
                 ":password" => $password,
-                ":securityCode" => $securityCode,
                 ":email" => $email,
                 ":registrationDate" => date('Y-m-d H:i:s'),
             ],
@@ -124,6 +120,49 @@ class Registration implements RegistrationInterface {
 
         return (array)$registerResult;
 	}
+
+    /**
+	 * Saves account data in DB to complete the registration process.
+	 *
+	 * @param RegisterDTO $registerObject
+	 * @return array
+	 */
+	public function registerUserWow(RegisterDTO $registerObject): array
+    {
+
+        $response = [
+            'message' => 'Account created with success!',
+            'success' => true,
+        ];
+
+        //change uuid4 to whatever uuid you need
+        $uuid = Uuid::uuid4()->__toString();
+        $username = $registerObject->getUsername();
+
+        // Default hash is bcrypt (config\hashing.php)
+        $password = Hash::make($registerObject->getPassword());
+        $email = $registerObject->getEmail();
+
+        $query =
+        'INSERT INTO "data"."Account"
+        ("Id", "LoginName", "PasswordHash", "SecurityCode", "EMail", "RegistrationDate", "State", "TimeZone", "VaultPassword", "IsVaultExtended")
+        VALUES(:uuid, :login, :password, :securityCode, :email, :registrationDate, 0, 0, \'\', false);';
+
+        $registerResult = DB::insert(
+            $query,
+            [
+                ":uuid" => $uuid,
+                ":login" => $username,
+                ":password" => $password,
+                ":email" => $email,
+                ":registrationDate" => date('Y-m-d H:i:s'),
+            ],
+        );
+
+        return (array)$registerResult;
+	}
+
+
 
     private function usernameDuplicate(string $Username): bool
     {
@@ -135,4 +174,5 @@ class Registration implements RegistrationInterface {
 
         return count($result) > 0;
     }
+
 }

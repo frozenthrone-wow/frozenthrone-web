@@ -19,7 +19,6 @@ class AuthenticationController extends Controller
             $request->Password ?? "",
             $request->PasswordRepeat ?? "",
             $request->Email ?? "",
-            $request->SecurityCode ?? 0,
         );
 
         $Registration = new Registration();
@@ -32,7 +31,7 @@ class AuthenticationController extends Controller
                 409
             );
         } else {
-            $registrationResult = $Registration->registerUser($RegisterObject);
+            $registrationResult = $Registration->registerUserBnet($RegisterObject);
 
             if($registrationResult)
             {

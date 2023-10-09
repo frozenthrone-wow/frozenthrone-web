@@ -8,12 +8,11 @@ class RegisterDTO {
     private string $Email;
     private int $SecurityCode;
 
-    function __construct($username, $password, $passwordrepeat, $email, $code)
+    function __construct($username, $password, $passwordrepeat, $email)
     {
         $this->Username = $username;
         $this->Password = $password;
         $this->Email = $email;
-        $this->SecurityCode = $code;
         $this->PasswordRepeat = $passwordrepeat;
     }
 
@@ -35,10 +34,5 @@ class RegisterDTO {
     public function getEmail(): string
     {
         return $this->Email;
-    }
-
-    public function getSecurityCode(): int
-    {
-        return $this->SecurityCode;
     }
 }

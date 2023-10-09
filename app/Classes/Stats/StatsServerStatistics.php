@@ -2,7 +2,7 @@
 
 namespace App\Classes\Stats;
 use App\DTO\ServerStatsDTO;
-use Illuminate\Support\Facades\DB;
+use App\Classes\Utility\WOWDB;
 
 class StatsServerStatistics {
 
@@ -46,7 +46,7 @@ class StatsServerStatistics {
 
         $parameters = [];
 
-        $ServerStatisticsObject = DB::select($query, $parameters);
+        $ServerStatisticsObject = WOWDB::select($query, $parameters);
         $ServerStatistics = [];
         foreach($ServerStatisticsObject as $StatisticsObject)
         {
