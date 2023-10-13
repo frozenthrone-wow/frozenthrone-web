@@ -37,11 +37,11 @@ In `config/legionweb.php`
     - `version`
     - `about`
     - `registration` settings
-## Control Panel [ `yourwebsite/cpanel` ]
+## Control Panel [ `yourwebsite/cpanel` ] -- NOT IMPLEMENTED YET
 
 
 
-### How to give access to Control Panel -- NOT IMPLEMENTED YET
+### How to give access to Control Panel
 
 1. Navigate to the "frozenthrone_web" database in MySQL (after running frozenthrone_web.sql)
 2. In the table "access", you have the following:
