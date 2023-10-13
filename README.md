@@ -1,8 +1,8 @@
 # Legion Web 1.0.0
 
 ## Requirements:
-- PHP 8.1
-- MySQL 5.7 (pref 5.7, as SPP Repack works on MySQL 57)
+- PHP >= 8.1
+- MySQL >= 8.0 
 - NPM (to build Tailwind)
 
 ## How To:
