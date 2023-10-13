@@ -4,7 +4,7 @@
 
         <a href="#" class="flex items-center pt-1 md:pt-0">
             <span class="h-6 mr-3 sm:h-9 bg-transparent" id = "website-logo"></span>
-            <span class="self-center text-xl font-semibold whitespace-nowrap text-purple-300">{{ config('legionweb.server.name') }} CPANEL</span>
+            <span class="self-center text-xl font-semibold whitespace-nowrap text-purple-300">{{ config('ftweb.server.name') }} CPANEL</span>
         </a>
 
         <button id = "navbar-menu-collapse" type="button"

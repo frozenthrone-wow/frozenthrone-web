@@ -1,8 +1,8 @@
 <html>
     <head>
         <title>
-            CPANEL - {{ config('legionweb.server.name') }}
-            {{ config('legionweb.server.version') }}
+            CPANEL - {{ config('ftweb.server.name') }}
+            {{ config('ftweb.server.version') }}
         </title>
 
         @vite('resources/css/app.css')

@@ -2,9 +2,9 @@
 
 @section('content')
     <button type="button" onclick= "addDownload()"
-            class="flex-auto text-white bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:bg-gradient-to-br
-            focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg
-            shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium text-sm rounded-md
+            class="flex-auto text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br
+            focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg
+            shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium text-sm rounded-md
             text-center md:w-32 h-14 px-5 py-2.5 w-full">
         <span class="sr-only">Add Download</span>
         Add Download

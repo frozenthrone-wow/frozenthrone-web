@@ -6,12 +6,12 @@ Trait AuthCommon {
     protected function limits(): array{
         return [
             'minCharLimit' => [
-                'username' => config('legionweb.registration.username.minChar'),
-                'password' => config('legionweb.registration.password.minChar'),
+                'username' => config('ftweb.registration.username.minChar'),
+                'password' => config('ftweb.registration.password.minChar'),
             ],
             'maxCharLimit' => [
-                'username' => config('legionweb.registration.username.maxChar'),
-                'password' => config('legionweb.registration.password.maxChar'),
+                'username' => config('ftweb.registration.username.maxChar'),
+                'password' => config('ftweb.registration.password.maxChar'),
             ]
         ];
     }

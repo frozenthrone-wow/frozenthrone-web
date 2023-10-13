@@ -32,8 +32,8 @@ body {
     linear-gradient(to bottom,
      #004d7a 10%,
      #008793 30%,
-     #00bf72 60%,
-     #a8eb12 90%);
+     #00bfbf 60%,
+     #3312eb 99%);
     position: fixed;
     top: 0;
     left: 0;
@@ -54,8 +54,7 @@ body {
     right: 0;
     bottom: 0;
     background-image: url("/resources/assets/images/site/background.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size: cover;
   }
 
 
@@ -105,6 +104,7 @@ img {
     height: 64px;
     background-position: 122px;
     width: 64px;
+    background-size: cover;
 }
 
 .truncate {

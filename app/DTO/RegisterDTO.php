@@ -6,7 +6,6 @@ class RegisterDTO {
     private string $Password;
     private string $PasswordRepeat;
     private string $Email;
-    private int $SecurityCode;
 
     function __construct($username, $password, $passwordrepeat, $email)
     {

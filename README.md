@@ -15,8 +15,9 @@
 5. run `npm run dev`.  
 We're using Tailwind so we need this running to have our code parsed and CSS generated.
 
-3. When you are done with the visual changes, run `npm run build`  
+6. When you are done with the visual changes, run `npm run build`  
 *In case website is acting up, delete the `hot` file from `public` directory.*
+7. Enable `gmp` extension in `php.ini`
 
 ## Configuration
 In `.env` file:

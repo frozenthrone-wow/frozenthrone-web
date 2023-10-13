@@ -31,7 +31,7 @@ class AuthenticationController extends Controller
                 409
             );
         } else {
-            $registrationResult = $Registration->registerUserBnet($RegisterObject);
+            $registrationResult = $Registration->registerUser($RegisterObject);
 
             if($registrationResult)
             {

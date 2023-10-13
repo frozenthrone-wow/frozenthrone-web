@@ -1,0 +1,54 @@
+
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #000;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.landing-page {
+    background-color: #1f1f1f;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+}
+
+.header img {
+    max-width: 150px;
+}
+
+h1 {
+    font-size: 26px;
+    margin-top: 10px;
+    color: #0573A3;
+    text-shadow: 2px 2px 4px #000;
+}
+
+p {
+    font-size: 12px;
+}
+
+a.official-website, .discord-link, .downloads a {
+    display: inline-block;
+    background-color: #0573A3; /* Blue color */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 20px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+a.official-website:hover, .discord-link:hover, .downloads a:hover {
+    background-color: #04597E; /* Darker blue on hover */
+}

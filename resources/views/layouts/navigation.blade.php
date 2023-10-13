@@ -1,7 +1,7 @@
    <nav class="container p-3 mx-auto md:p-0 md:mt-10 max-w-6xl ">
-     <div class="flex items-center justify-between md:hidden  border-b-2 pb-3 border-y-green-400 px-10" >
+     <div class="flex items-center justify-between md:hidden  border-b-2 pb-3 border-y-blue-400 px-10" >
        <span class="h-6 mr-3 sm:h-9 bg-transparent md:hidden" id="website-logo"></span>
-       <span id="menu-button" class="w-7 h-7 md:hidden text-green-500 cursor-pointer">
+       <span id="menu-button" class="w-7 h-7 md:hidden text-blue-500 cursor-pointer">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-deep" width="48" height="48" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path d="M4 6h16"></path>
@@ -15,18 +15,18 @@
          <div class="col-span-4 text-lg md:border-y border-y-slate-800">
            <ul class="justify-between md:p-4 md:flex">
              <li>
-               <button id="sidebar-interact" data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" class="flex-auto text-white bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:bg-gradient-to-br
-                                focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg
-                                shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium text-sm
+               <button id="sidebar-interact" data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" class="flex-auto text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br
+                                focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg
+                                shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium text-sm
                                 text-center md:w-32 h-14 px-5 py-2.5 w-full">
                  <span class="sr-only">REGISTER</span>
                  REGISTER
                </button>
              </li>
              <li>
-               <button id="download-interact" type="button" class="flex-auto text-white bg-gradient-to-r from-green-700 via-green-600 to-green-500 hover:bg-gradient-to-br
-                                focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg
-                                shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium text-sm
+               <button id="download-interact" type="button" class="flex-auto text-white bg-gradient-to-r from-blue-700 via-blue-600 to-blue-500 hover:bg-gradient-to-br
+                                focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg
+                                shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium text-sm
                                 text-center md:w-32 h-14 px-5 py-2.5 w-full">
                  <span class="sr-only">DOWNLOAD</span>
                  DOWNLOAD
@@ -44,18 +44,18 @@
          <div class="col-span-4 text-lg md:border-y border-y-slate-800">
            <ul class="justify-between md:p-4 md:flex">
              <li>
-               <button id="connect-interact" type="button" class="flex-auto text-white bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:bg-gradient-to-br
-                                focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg
-                                shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium text-sm
+               <button id="connect-interact" type="button" class="flex-auto text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br
+                                focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg
+                                shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium text-sm
                                 text-center md:w-32 h-14 px-5 py-2.5 w-full">
                  <span class="sr-only">CONNECT</span>
                  CONNECT
                </button>
              </li>
              <li>
-               <button id="community-interact-discord" type="button" class="flex-auto text-white bg-gradient-to-r from-green-700 via-green-600 to-green-500 hover:bg-gradient-to-br
-                                focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg
-                                shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium text-sm
+               <button id="community-interact-discord" type="button" class="flex-auto text-white bg-gradient-to-r from-blue-700 via-blue-600 to-blue-500 hover:bg-gradient-to-br
+                                focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg
+                                shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium text-sm
                                 text-center md:w-32 h-14 px-5 py-2.5 w-full">
                  <span class="sr-only">DISCORD</span>
                  DISCORD

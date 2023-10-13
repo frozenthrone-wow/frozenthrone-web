@@ -36,13 +36,13 @@ class StatsServerStatistics {
 
         $query =
         'SELECT count(*) as `count`
-        FROM legion_auth.account a
+        FROM acore_auth.account a
         UNION ALL
         SELECT count(*) as `count`
-        FROM legion_characters.`characters` c
+        FROM acore_characters.`characters` c
         UNION ALL
         SELECT count(*) as `count`
-        FROM legion_characters.guild g ';
+        FROM acore_characters.guild g ';
 
         $parameters = [];
 

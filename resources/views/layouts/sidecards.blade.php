@@ -13,7 +13,7 @@
             </h3>
         </blockquote>
 
-        @if(config('legionweb.server.about.enableOnlineGadget'))
+        @if(config('ftweb.server.about.enableOnlineGadget'))
             <figcaption class="flex justify-center space-x-0 mb-3">
                 @include('layouts.gadgets.onlineGadget')
             </figcaption>
@@ -25,7 +25,7 @@
                     <div>EXP. Rate:</div>
                 </div>
                 <div class="font-medium text-white text-left">
-                    <div>x{{ config('legionweb.server.about.expRate') }}</div>
+                    <div>x{{ config('ftweb.server.about.expRate') }}</div>
                     <div class="text-sm text-gray-200"></div>
                 </div>
             </div>
@@ -35,13 +35,13 @@
                     <div>Drop Rate:</div>
                 </div>
                 <div class="font-medium text-white text-left">
-                    <div>x{{ config('legionweb.server.about.dropRate') }}</div>
+                    <div>x{{ config('ftweb.server.about.dropRate') }}</div>
                     <div class="text-sm text-gray-200"></div>
                 </div>
             </div>
         </figcaption>
 
-        @if(config('legionweb.server.about.enableRankingGadget'))
+        @if(config('ftweb.server.about.enableRankingGadget'))
             <figcaption class="flex justify-center space-x-0 mb-3">
                 @include('layouts.gadgets.onlineRankingGadget')
             </figcaption>

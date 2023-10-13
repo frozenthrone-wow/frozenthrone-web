@@ -2,7 +2,7 @@
     let enableContentPush = false;
 
     function sidebarControl() {
-        let sidebar = $('#legionweb-sidebar');
+        let sidebar = $('#ftweb-sidebar');
         let contentHolder = $('#content-holder');
 
         if(sidebar.data().visible) {

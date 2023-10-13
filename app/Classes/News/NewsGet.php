@@ -39,7 +39,7 @@ class NewsGet {
             n.title AS "PostTitle",
             n.body AS "PostBody",
             n.post_date AS "PostDate"
-        FROM legion_website.news n
+        FROM frozenthrone_web.news n
         '.($newsId ? 'WHERE n.id = :newsId AND n.active = true' : 'WHERE n.active = true').'
         ORDER BY n.post_date DESC
         '.( $latest ? 'LIMIT 1' : '');
@@ -61,7 +61,7 @@ class NewsGet {
                 $news['PostBody'],
                 date('Y-m-d H:i',
                     strtotime($news['PostDate'])),
-                'Burning Legion Team',
+                'Frozen Throne Team',
             );
 
             $newsArray[] = $newsObject->toArray();

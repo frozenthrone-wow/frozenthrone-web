@@ -9,7 +9,7 @@
                     <path d="M10 17l2 -1l2 1"></path>
                     <path d="M10 9l2 -1l2 1"></path>
                 </svg>
-                TOP {{ config('legionweb.server.about.topRankingNumber') }} PLAYERS
+                TOP {{ config('ftweb.server.about.topRankingNumber') }} PLAYERS
             </h3>
         </blockquote>
         <figcaption class="ml-5">
