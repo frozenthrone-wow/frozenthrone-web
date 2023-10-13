@@ -1,4 +1,4 @@
-# Legion Web 1.0.0
+# Frozen Throne Web 1.0.0
 
 ## Requirements:
 - PHP >= 8.1
@@ -43,10 +43,10 @@ In `config/legionweb.php`
 
 ### How to give access to Control Panel -- NOT IMPLEMENTED YET
 
-1. Navigate to the "legion_website" database in MySQL (after running web_db.sql)
+1. Navigate to the "frozenthrone_web" database in MySQL (after running frozenthrone_web.sql)
 2. In the table "access", you have the following:
     - id (index, autocompletes)
-    - wowid (the UUID of the account)
+    - wowid (the ID of the account)
     - level (access level of the user 0, 1 or 9)
 
 What do access levels do?  
@@ -62,8 +62,8 @@ What do access levels do?
 ----
 <p>Powered by: <br> <a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="200" alt="Laravel Logo"></a></p>
 
-
 # Screenshots
-![Main Page](https://i.imgur.com/0A2lrLK.png)
-![Register Sidebar](https://i.imgur.com/axXjy03.png)
-![Downloads Modal](https://i.imgur.com/5ZuEdYx.png)
+![Main Page](https://i.imgur.com/BebtUmD.png)
+![Register Sidebar](https://i.imgur.com/q2EwAJV.png)
+![Downloads Modal](https://i.imgur.com/UlJAkl9.png)
+![News Modal](https://i.imgur.com/lPKSa6f.png)
